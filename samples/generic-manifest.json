@@ -1,0 +1,99 @@
+{
+    "manifest": [
+        {
+            "id": "d9be4477-e351-45b3-acd9-e1da05e6f633",
+            "type": "sdp",
+            "version": 0,
+            "mbpId": "51131FB5-42A2-4267-A402-0ECFEFAD1619",
+            "claimId": "ef3sfd23-e351-45b3-acd9-e1da05e6f633",
+            "created": "2023-1-08T14:47:32Z",
+            "mrvExtensions": [
+                {
+                    "name": "mrvExtensionName",
+                    "value": "mrvExtensionValue",
+                    "type": "string",
+                    "description": "mrvExtensionDescription"
+                }
+            ],
+            "files": [
+                {
+                    "name": "file1.bin",
+                    "type": "data/bin",
+                    "description": "This is a description of the file",
+                    "source": {
+                        "id": "1234567890",
+                        "ecsId": "23142331-42A2-4267-A402-0ECFEFAD1619",
+                        "type": "device",
+                        "name": "deviceName",
+                        "version": "1.0.0",
+                        "location": {
+                            "latitude": 123.456,
+                            "longitude": 123.456,
+                            "altitude": 123.456,
+                            "description": "This is a description of the location, like a facility name or address"
+                        }
+                    },
+                    "dataExtension": [
+                        {
+                            "extensionName": "CCS+ Methodology Process",
+                            "version": "1.0.0",
+                            "data": {
+                                "processStage": "capture",
+                                "processStep": "emissionCapture",
+                                "processStepDescription": "This is a description of the process step",
+                                "comment": "This is a comment"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "file1.pdf",
+                    "type": "application/pdf",
+                    "description": "This is a description of the file",
+                    "source": {
+                        "id": "1234567890",
+                        "ecsId": "23142331-42A2-4267-A402-0ECFEFAD1619",
+                        "type": "device",
+                        "name": "deviceName",
+                        "version": "1.0.0",
+                        "location": {
+                            "description": "This is a description of the location, like a facility name or address"
+                        }
+                    },
+                    "dataExtension": [
+                        {
+                            "extensionName": "CCS+ Methodology Process",
+                            "version": "1.0.0",
+                            "data": {
+                                "processStage": "store",
+                                "processStep": "prepareForTransport",
+                                "processStepDescription": "This is a description of the process step",
+                                "comment": "This is a comment"
+                            }
+                        },
+                        {
+                            "extensionName": "Carbon Metadata",
+                            "version": "1.0.0",
+                            "data": {
+                                "declaredUnit": "liter",
+                                "unitaryProductAmount": "12.0",
+                                "fossilGhgEmissions": "0.123",
+                                "fossilCarbonContent": "1.721",
+                                "biogenicEmissions": {
+                                    "landUseEmissions": "0.001",
+                                    "iLucGhgEmissions": "0.021",
+                                    "dLucGhgEmissions": "0.011",
+                                    "otherGhgEmissions": "0.0"
+                                },
+                                "biogenicCarbonContent": "0.0",
+                                "biogenicCarbonWithdrawal": "0.0",
+                                "characterizationFactors": "AR6",
+                                "biogenicAccountingMethodology": "Name of Methodolology"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
